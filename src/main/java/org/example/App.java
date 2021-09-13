@@ -13,48 +13,51 @@ public class App
         Scanner input = new Scanner(System.in);
         System.out.print( "Please enter the number of the month: " );
         month = input.nextInt();
+        String monthString = "";
 
         switch (month)
         {
             case 1:
-                System.out.println("The name of the month is January.");
+                monthString = "The name of the month is January.";
                 break;
             case 2:
-                System.out.println("The name of the month is February.");
+                monthString = "The name of the month is February.";
                 break;
             case 3:
-                System.out.println("The name of the month is March.");
+                monthString = "The name of the month is March.";
                 break;
             case 4:
-                System.out.println("The name of the month is April.");
+                monthString = "The name of the month is April.";
                 break;
             case 5:
-                System.out.println("The name of the month is May.");
+                monthString = "The name of the month is May.";
                 break;
             case 6:
-                System.out.println("The name of the month is June.");
+                monthString = "The name of the month is June.";
                 break;
             case 7:
-                System.out.println("The name of the month is July.");
+                monthString = "The name of the month is July.";
                 break;
             case 8:
-                System.out.println("The name of the month is August.");
+                monthString = "The name of the month is August.";
                 break;
             case 9:
-                System.out.println("The name of the month is September.");
+                monthString = "The name of the month is September.";
                 break;
             case 10:
-                System.out.println("The name of the month is October.");
+                monthString = "The name of the month is October.";
                 break;
             case 11:
-                System.out.println("The name of the month is November.");
+                monthString = "The name of the month is November.";
                 break;
             case 12:
-                System.out.println("The name of the month is December.");
+                monthString = "The name of the month is December.";
                 break;
             default: //For any value outside that range, display an appropriate error message.
-                System.out.println("Not a month!");
+                monthString = "Not a month!";
                 break;
         }
+        // Use a single output statement for this program.
+        System.out.printf("%s", monthString);
     }
 }
